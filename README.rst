@@ -148,14 +148,14 @@ Example: module "amazon.py" with classes "AmazonBook", "AmazonCoupons".
 Logging
 '''''''
 
-Level WARNINGS:
+Level WARNINGS
 
-  * logs fail messages.
+* logs fail messages.
 
-Level INFO:
+Level INFO
 
-  * logs exception messages about fails;
-  * logs success messages.
+* logs exception messages about fails;
+* logs success messages.
 
 Set log level in your script:
 

@@ -92,21 +92,21 @@ Guideline
 Webdriver
 '''''''''
 
-1. Change default webdriver for new objects
+Change default webdriver for new objects
 
 .. code-block:: python
 
     Crawler.webdriver = None
     Crawler.webdriver_default = lambda : Crawler.init_webdriver_chrome_remote(ip, port)
 
-2. Change default webdriver for new objects of selected class
+Change default webdriver for new objects of selected class
 
 .. code-block:: python
 
     AmazonBook.webdriver = None
     AmazonBook.webdriver_default = lambda : Crawler.init_webdriver_chrome_remote(ip, port)
 
-3. Change webdriver for selected object
+Change webdriver for selected object
 
 .. code-block:: python
 
@@ -116,10 +116,9 @@ Webdriver
 Child classes
 '''''''''''''
 
-1. Realization of parsers should be placed in child classes.
-    See the example of child class in the Example section.
+Realization of parsers should be placed in child classes. See the example of child class in the Example section.
 
-2. Child class should have constructor
+Child class should have constructor
 
 .. code-block:: python
 
@@ -127,7 +126,7 @@ Child classes
         self.parsers = {self.parse_title}  # Set of routine parsers
         super().__init__(url)              # Parent class constructor
 
-3. Child class should have parsers
+Child class should have parsers
 
 .. code-block:: python
 
@@ -141,22 +140,22 @@ Child classes
             return None             # If success, return None
         return 'Title not found.'   # If failed, return error message
 
-4. Recommend to make separate class for each webpage type,
-    and separate module (with several classes) for each website.
-    Example: module "amazon.py" with classes "AmazonBook", "AmazonCoupons".
+Recommend to make separate class for each webpage type,
+and separate module (with several classes) for each website.
+Example: module "amazon.py" with classes "AmazonBook", "AmazonCoupons".
 
 
 Logging
 '''''''
 
-1. Level WARNINGS:
-    a) logs fail messages.
+Level WARNINGS:
+  * logs fail messages.
 
-2. Level INFO:
-    a) logs exception messages about fails;
-    b) logs success messages.
+Level INFO:
+  * logs exception messages about fails;
+  * logs success messages.
 
-3. Set log level in your script:
+Set log level in your script:
 
 .. code-block:: python
 

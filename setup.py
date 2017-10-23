@@ -29,7 +29,5 @@ setup(
        'Intended Audience :: Developers',
        'Programming Language :: Python :: 3.4',
        'Natural Language :: English',
-    ],
-    include_package_data=True,
-    python_requires='>=3.4'
+    ]
 )

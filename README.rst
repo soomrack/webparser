@@ -149,9 +149,11 @@ Logging
 '''''''
 
 Level WARNINGS:
+
   * logs fail messages.
 
 Level INFO:
+
   * logs exception messages about fails;
   * logs success messages.
 

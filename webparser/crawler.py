@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""browses and retrieves data from web.
+"""tiny framework for parsing web.
 
-This module provides base class for web webparser, it can
+This module provides base class for webparser, it can
     1. open webpages with selenium webdriver;
     2. run a set of parsers;
     3. handle selenium exceptions;

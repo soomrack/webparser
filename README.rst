@@ -66,7 +66,7 @@ Create parsers:
 
 .. code-block:: python
 
-    Example script 01:
+    # Example script 01:
     #-------[ parser.py ]---------------------------------------------------
         from webparser.amazon import AmazonBook
 
@@ -75,7 +75,7 @@ Create parsers:
         print(amazon_book.data['cover_url'])    # Print parsed url title
     #-----------------------------------------------------------------------
 
-    Example script 02:
+    # Example script 02:
     #-------[ parser.py ]---------------------------------------------------
         from webparser.amazon import AmazonBook
 

@@ -6,7 +6,7 @@ def readfile(name):
         return f.read()
 
 
-README = readfile('README.rst')
+README = readfile('README.rst')  # info 
 
 
 install_requires = [
